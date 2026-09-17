@@ -1,6 +1,5 @@
 # NovaLend Scrum Master Ops Kit
 
-Prepared for: FirstBank Digital Factory — Scrum Master take-home task
 Scenario: NovaLend squad, CBN regulatory reporting deadline in 6 weeks
 
 ## What's here
