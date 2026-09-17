@@ -1,12 +1,12 @@
 | File | Artifact |
 |---|---|
 | `01-six-week-plan.md` | Sprint/program plan to the CBN deadline, ceremony cadence, capacity accounting, explicit cut/protect list |
-| `capacity_chart.png` | Visual capacity plan referenced in the six-week plan |
-| `02-raid-log.md` | RAID log |
+| `02-Raid-Log.md` | RAID log |
 | `03-retro-facilitation-plan.md` | Retro format and questions for a low-morale team that missed two sprints |
-| `04-stakeholder-comms-plan.md` | Reporting cadence to Engineering Leadership, Head of Digital Factory, and Compliance/Risk, plus one fully written sample update |
-| `05-ceremony-redesign.md` | Standup/planning/retro redesign for the remote contractor (5 hrs behind Lagos), with a walked-through concrete day |
-| `06-dependency-map.md` | Mermaid dependency map for the NovaWallet API dependency, with escalation path |
+| `04-Stakeholder-communication-Plan.md` | Reporting cadence to Engineering Leadership, Head of Digital Factory, and Compliance/Risk, plus one fully written sample update |
+| `05-Ceremony-Redesign.md` | Standup/planning/retro redesign for the remote contractor (5 hrs behind Lagos), with a walked-through concrete day |
+| `06-Dependency-Map.md` | Mermaid dependency map for the NovaWallet API dependency, with escalation path |
+| `capacity_chart.png` | Visual capacity plan referenced in the six-week plan |
 | `DEFINITION_OF_DONE.md` | Definition of done for the deliverable |
 | `ESCALATION_SCRIPT.md` | Exact escalation script for the NovaWallet dependency risk|
 | `AI_USAGE.md` | Tools used, prompts, and a documented case of catching/fixing generic AI output |
