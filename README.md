@@ -1,14 +1,14 @@
 | File | Artifact |
 |---|---|
 | `01-six-week-plan.md` | Sprint/program plan to the CBN deadline, ceremony cadence, capacity accounting, explicit cut/protect list |
-| `capacity_chart.png` | Visual capacity plan referenced in the six-week plan (stretch goal) |
-| `02-raid-log.md` | RAID log — 11 entries, each with owner, mitigation, severity |
+| `capacity_chart.png` | Visual capacity plan referenced in the six-week plan |
+| `02-raid-log.md` | RAID log |
 | `03-retro-facilitation-plan.md` | Retro format and questions for a low-morale team that missed two sprints |
 | `04-stakeholder-comms-plan.md` | Reporting cadence to Engineering Leadership, Head of Digital Factory, and Compliance/Risk, plus one fully written sample update |
 | `05-ceremony-redesign.md` | Standup/planning/retro redesign for the remote contractor (5 hrs behind Lagos), with a walked-through concrete day |
 | `06-dependency-map.md` | Mermaid dependency map for the NovaWallet API dependency, with escalation path |
-| `DEFINITION_OF_DONE.md` | Tightened DoD for a regulator-facing deliverable (stretch goal) |
-| `ESCALATION_SCRIPT.md` | Exact escalation script for the NovaWallet dependency risk (stretch goal) |
+| `DEFINITION_OF_DONE.md` | Tightened DoD for a regulator-facing deliverable |
+| `ESCALATION_SCRIPT.md` | Exact escalation script for the NovaWallet dependency risk|
 | `AI_USAGE.md` | Tools used, prompts, and a documented case of catching/fixing generic AI output |
 
 ## Assumptions made (brief left these open — documenting per Section 4 instructions)
