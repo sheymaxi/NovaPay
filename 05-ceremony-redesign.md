@@ -1,0 +1,26 @@
+# Ceremony Redesign — Remote Contractor (5 Hours Behind Lagos)
+
+**The failure mode this avoids:** "just catch up async" quietly turns the contractor into a second-class team member who finds out about decisions after they're made. The redesign below gives them one real, protected live window per day where it matters, and makes everything else genuinely async rather than a one-way broadcast.
+
+**Fixed overlap window used throughout: 2:00–4:00pm Lagos time / 9:00–11:00am contractor time.**
+
+## Standup
+- **Old pattern (doesn't work here):** live 9am Lagos call — contractor is asleep, gets a recording or a summary after the fact, never real-time.
+- **New pattern:** written async standup posted by each person into a shared thread by their own 10am local time (what I did / doing / blockers). Lagos-based engineers also hold a 10-minute live huddle at 9:30am Lagos for anything purely local — but nothing that affects the contractor gets decided there. Any blocker that touches the contractor's work gets flagged in the thread and pulled into the on-demand bridge slot the same day, not left until tomorrow.
+
+## Sprint Planning & Retro
+- Held live, in full, inside the 2–4pm/9–11am overlap window. These are the two ceremonies that most need everyone present and are never scheduled around the contractor's off-hours.
+- Pre-reads (backlog items, acceptance criteria, or retro pre-work) are shared 24 hours ahead so the contractor isn't absorbing everything cold inside a compressed live window.
+
+## A concrete Tuesday (Sprint 2)
+
+| Time (Lagos) | Time (contractor) | What happens |
+|---|---|---|
+| 9:00am | 4:00am (off-hours) | Lagos engineers post async standup; PO checks overnight NovaWallet status. |
+| 9:30am | 4:30am (off-hours) | 10-min Lagos-only huddle — local coordination only, no decisions affecting the contractor. |
+| 1:00pm | 8:00am | Contractor comes online, posts their async standup, reviews the morning's notes, flags anything blocking. |
+| 2:00–2:15pm | 9:00–9:15am | On-demand bridge slot — used only if a live blocker was flagged; otherwise skipped, not held out of habit. |
+| 2:15–3:15pm | 9:15–10:15am | Backlog refinement (this is a refinement day) — full squad, live. |
+| End of day | — | SM posts a written decision log in the channel recapping anything decided, confirming nothing affecting the contractor was decided outside the window. |
+
+The decision log is the safeguard: even with a real overlap window, things get said informally after a meeting "wraps." Writing every decision down closes that gap.

@@ -1,0 +1,63 @@
+# NovaLend 6-Week Plan to CBN Deadline
+
+**Context this plan is built for:** NovaLend squad (7 delivery members: 2 backend, 2 frontend — one of whom is a remote contractor 5 hours behind Lagos — 1 QA, 1 designer, 1 PO), has missed the last two sprints, morale is visibly low, and the squad depends on a NovaWallet API with a history of slipping. The CBN regulatory reporting deadline cannot move.
+
+## Ceremony cadence (all sprints)
+
+| Ceremony | Frequency | Duration | Notes |
+|---|---|---|---|
+| Async written standup | Daily | Ongoing thread | See `05-ceremony-redesign.md` — not a live daily call |
+| Live bridge slot | On demand, weekdays | 15 min | Only used when a blocker is flagged in async standup; not calendar-fixed |
+| Backlog refinement | Twice/week | 30 min | In the 2–4pm Lagos / 9–11am contractor overlap window |
+| Sprint Planning | Start of each sprint | 90 min | Full squad, live, overlap window; pre-read shared 24h ahead |
+| NovaWallet dependency sync | Weekly | 20 min | Backend Lead + NovaWallet counterpart; SM attends first 3 to build the relationship |
+| Sprint Review | End of each sprint | 45 min | Demo to PO + one Eng Leadership rep |
+| Retrospective | End of each sprint | 60 min | Full format in `03-retro-facilitation-plan.md` |
+
+## Capacity accounting
+
+The squad's nominal capacity is 7 people × 10 working days = **70 person-days per 2-week sprint**. This plan does not pretend the leave and holiday don't exist — they're subtracted explicitly:
+
+![Capacity chart](capacity_chart.png)
+
+| Sprint | Nominal | Adjustments | Net available for new dev work |
+|---|---|---|---|
+| Sprint 1 — Reset & Scope Lock (Wk 1–2) | 70 | None | **70 (100%)** |
+| Sprint 2 — Core Build (Wk 3–4) | 70 | −5 (QA approved leave) | **65 (93%)** |
+| Sprint 3 — Harden & Certify (Wk 5–6) | 70 | −7 (public holiday, all 7 people) − 14 (last 2 days reserved for freeze/UAT/compliance sign-off, not new dev) | **49 (70%)** |
+
+Sprint 3 is deliberately the lightest "new work" sprint of the three — this is the sprint immediately before a regulator deadline, and the plan protects hardening time rather than assuming everyone works flat-out until the last hour.
+
+## Sprint-by-sprint goals
+
+### Sprint 1 — Reset & Scope Lock (Weeks 1–2)
+- **Day 1–2:** Root-cause retro on the two missed sprints, run before committing to any new sprint goal (see `03-retro-facilitation-plan.md`). Committing to a new plan without first understanding why the last two failed is the fastest way to miss a third.
+- Lock the hard MVP scope for the CBN report with PO and Compliance — agree in writing what is "regulator-required" vs "nice to have" so Sprint 3's cuts aren't a last-minute argument.
+- Backend builds a contract-tested mock of the NovaWallet API immediately, so the squad is never fully blocked on NovaWallet's timeline (detail in `06-dependency-map.md`).
+- Sprint Review: demo the mock integration and the locked scope, not feature completeness.
+
+### Sprint 2 — Core Build (Weeks 3–4)
+- Build the reporting engine, audit trail, and reconciliation logic against the mock; swap to the real NovaWallet API in staging as soon as it's available, without blocking on it.
+- QA's approved leave falls here — testing shifts left: engineers write test cases with QA *before* they leave, and PR review checklists absorb some of QA's normal coverage for that week.
+- Track velocity honestly; if Sprint 2 slips, the cut list below activates in Sprint 3 rather than being decided under panic.
+
+### Sprint 3 — Harden & Certify (Weeks 5–6)
+- Code freeze on new features by **end of day Wednesday, Week 6**. Remaining time is UAT, defect fixing on the regulatory path only, and assembling the CBN submission package.
+- Compliance/Risk sign-off is requested with the draft report format in hand, not the final build — see `04-stakeholder-comms-plan.md` for why they're engaged from Week 1, not Week 6.
+- Retro happens before the deadline, not after — capturing lessons while the deadline is still live pressure produces more honest input than a post-mortem once it's already over.
+
+## What gets cut or protected under pressure — and why
+
+**Protected, non-negotiable:**
+- Core CBN report fields, audit trail, and data lineage — this is the entire reason the deadline exists.
+- Reconciliation/data accuracy logic — a wrong number in a regulatory submission is worse than a late one.
+- Compliance sign-off checkpoint — skipping it to save two days risks the whole submission being rejected.
+- Sprint Review and Retrospective, even if shortened — a team rebuilding trust after two missed sprints cannot afford to lose the ceremonies that make progress and problems visible. Cutting these to "save time" is a false economy here.
+
+**Cut or deferred first:**
+- UX polish on regulator-facing screens — ship functional and legible, defer visual refinement to a post-deadline sprint.
+- Any NovaLend feature not required for the CBN report (e.g., BNPL pricing experiments) — moved to the backlog, explicitly communicated as deferred, not dropped.
+- Full regression suite expansion — QA scope narrows to the regulatory path only during the Sprint 3 compression; the rest is logged as tech debt, not silently skipped.
+- If NovaWallet's API slips badly, the contractor's stream shifts to hardening the mock/stub and non-blocked work rather than idling — this is a trade-off decision, not a default, and gets revisited at each weekly dependency sync.
+
+This ordering was agreed with the PO in Sprint 1 planning specifically so that if a cut has to happen in Week 5 or 6, it's executing a decision the team already made calmly — not making one under deadline panic.
