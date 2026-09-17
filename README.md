@@ -1,9 +1,3 @@
-# NovaLend Scrum Master Ops Kit
-
-Scenario: NovaLend squad, CBN regulatory reporting deadline in 6 weeks
-
-## What's here
-
 | File | Artifact |
 |---|---|
 | `01-six-week-plan.md` | Sprint/program plan to the CBN deadline, ceremony cadence, capacity accounting, explicit cut/protect list |
