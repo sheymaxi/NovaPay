@@ -7,7 +7,7 @@
 | `04-stakeholder-comms-plan.md` | Reporting cadence to Engineering Leadership, Head of Digital Factory, and Compliance/Risk, plus one fully written sample update |
 | `05-ceremony-redesign.md` | Standup/planning/retro redesign for the remote contractor (5 hrs behind Lagos), with a walked-through concrete day |
 | `06-dependency-map.md` | Mermaid dependency map for the NovaWallet API dependency, with escalation path |
-| `DEFINITION_OF_DONE.md` | Tightened DoD for a regulator-facing deliverable |
+| `DEFINITION_OF_DONE.md` | Definition of done for the deliverable |
 | `ESCALATION_SCRIPT.md` | Exact escalation script for the NovaWallet dependency risk|
 | `AI_USAGE.md` | Tools used, prompts, and a documented case of catching/fixing generic AI output |
 
