@@ -1,6 +1,6 @@
 # NovaLend 6-Week Plan to CBN Deadline
 
-**Context this plan is built for:** NovaLend squad (7 delivery members: 2 backend, 2 frontend — one of whom is a remote contractor 5 hours behind Lagos — 1 QA, 1 designer, 1 PO), has missed the last two sprints, morale is visibly low, and the squad depends on a NovaWallet API with a history of slipping. The CBN regulatory reporting deadline cannot move.
+NovaLend squad (7 delivery members: 2 backend, 2 frontend — one of whom is a remote contractor 5 hours behind Lagos — 1 QA, 1 designer, 1 PO), has missed the last two sprints, morale is visibly low, and the squad depends on a NovaWallet API with a history of slipping. The CBN regulatory reporting deadline cannot move.
 
 ## Ceremony cadence (all sprints)
 
